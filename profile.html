@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"><link rel="stylesheet" href="style.css"><title>Личный кабинет</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">Кино<span>Поиск</span></a>
+            <nav><ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="search.html" class="nav-link">Поиск</a></li>
+                <li><a href="favorites.html" class="nav-link">Избранное</a></li>
+                <li><a href="profile.html" class="nav-link active">Профиль</a></li>
+                
+            </ul></nav>
+        </div>
+    </header>
+    <main class="container">
+        <section style="max-width: 500px; margin: 0 auto;">
+            <h1 class="page-title">Настройки аккаунта</h1>
+            <form class="profile-form" id="profile-form">
+              <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                    <label for="username-input" style="font-weight: 600; color: var(--text-white);">Ваше Имя:</label>
+                    <input type="text" id="username-input" class="input-field" placeholder="Например,Ерсултан" required autocomplete="name">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                    <label for="favorite-genre" style="font-weight: 600; color: var(--text-white);">Любимый жанр кино:</label>
+                    <select id="favorite-genre" class="input-field" style="cursor: pointer;">
+                        <option value="all">Не выбрано</option>
+                        <option value="action">Боевики</option>
+                        <option value="sci-fi">Фантастика</option>
+                        <option value="drama">Драмы</option>
+                        <option value="comedy">Комедии</option>
+                        <option value="horror">Ужасы</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn" style="margin-top: 25px; width: 100%; padding: 12px; font-size: 16px;">
+                    Сохранить изменения
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer"><p>&copy; 2026 КиноПоиск Клон.</p></footer>
+    
+</body>
+</html> 
