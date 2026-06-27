@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"><link rel="stylesheet" href="style.css"><title>Поиск фильмов</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">Кино<span>Поиск</span></a>
+            <nav><ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="search.html" class="nav-link active">Поиск</a></li>
+                <li><a href="favorites.html" class="nav-link">Избранное</a></li>
+                <li><a href="send.php" class="nav-link">Профиль</a></li>
+               
+            </ul></nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1 class="page-title">Расширенный Поиск</h1>
+        <form style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 35px;">
+            <input type="text" class="input-field" style="flex: 1; min-width: 250px;" value="Интерстеллар" placeholder="Введите название..." required>
+            <button type="submit" class="btn">Найти</button>
+        </form>
+        <div class="movies-grid">
+            <a href="movie.html" class="movie-link">
+                <div class="movie-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6vZGiEJD4-jlM4GVfc1gwA2-UnTdE8NDwqmJ8obekeA&s=10" class="movie-img">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Интерстеллар</h3>
+                        <div class="movie-meta"><span>2014</span><span class="movie-rating rate-high">8.6</span></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer class="footer"><p>&copy; 2026 КиноПоиск </p></footer>
+    
+</body>
+</html>
